@@ -9,6 +9,6 @@ header("Pragma: no-cache");
 header("Expires: 0");
 echo "<script>localStorage.clear(); window.location.href = 'public/signin.php';</script>";
 
-header("Location: /");
+header("Location:  ./signin.php");
 exit;
 ?>

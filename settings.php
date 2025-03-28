@@ -114,7 +114,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <button type="submit" id="saveButton" class="mt-4 bg-gray-400 text-white px-4 py-2 rounded cursor-not-allowed" disabled>Save Changes</button>
         
             <div class="flex justify-end">
-                <a href="/" class="text-blue-500 hover:text-blue-700">Back to Home</a>
+                <a href="./index.php" class="text-blue-500 hover:text-blue-700">Back to Home</a>
             </div>
         </form>
     
