@@ -72,7 +72,7 @@ class User {
 				return $user;
 			} else {
 				echo "Password does not match!";
-				return true;
+				return false;
 			}
 		} else {
 			return false;
