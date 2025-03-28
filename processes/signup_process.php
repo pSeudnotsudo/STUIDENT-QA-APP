@@ -36,7 +36,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if ($user->register($firstname, $lastname, $email, $username, $phone, $password)) {
         header("Location: ../public/signin.php?success=Account created successfully! Please sign in.");
-		return true;
+		exit ();
     } else {
         header("Location: ../public/signup.php?error=Failed to register. Try again.");
         exit();

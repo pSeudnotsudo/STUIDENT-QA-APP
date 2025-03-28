@@ -13,7 +13,6 @@ class User {
 	public $password;
 	public $created_at;
 
-	// constructor initialize the database connection
 	public function __construct($db) {
 		$this->conn = $db;
 	}
@@ -28,7 +27,6 @@ class User {
 		if (!$stmt) {
 			die("Prepare failed: " . $this->conn->error);
 		}
-		echo $password;
 			
 		$hashed_password = password_hash($password, PASSWORD_DEFAULT);
 		$created_at = date("Y-m-d H:i:s");
@@ -39,7 +37,7 @@ class User {
 			die("Execute failed: " . $stmt->error);
 		}
 	
-		exit();
+		return true;
 	}
 	
 	public function checkUserExists($email, $username) {
@@ -74,7 +72,7 @@ class User {
 				return $user;
 			} else {
 				echo "Password does not match!";
-				return true;
+				return false;
 			}
 		} else {
 			return false;

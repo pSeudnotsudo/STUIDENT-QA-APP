@@ -36,7 +36,7 @@ if ($selected_question_id) {
 </head>
 <body class="bg-gray-100 min-h-screen flex flex-col">
 
-    <header class="bg-white shadow-md p-4 flex justify-between items-center">
+    <header class="bg-gray-700 text-white shadow-md p-4 flex justify-between items-center">
         <h1 class="text-xl font-bold">QUESTION AND ANSWER</h1>
         <?php if ($username): ?>
             <div class="relative">
